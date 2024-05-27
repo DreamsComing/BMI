@@ -1,0 +1,76 @@
+.startWindow{
+    position: absolute;
+    top: 3%;
+    left: 1%;
+}
+.startWindow>button{
+    position: relative;
+    z-index: 1;
+}
+.startWindow>button,.options>div>button{
+    width: 70px;
+    height: 50px;
+    background: #a8a7a7;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+.options{
+    transform: translateY(-35px);
+    transition: all 0.7s ease-in-out 0s;
+}
+.active{
+    transform: translateY(0);
+}
+
+.options>div>button{
+    height: 30px;
+    font-size: 17px;
+    -webkit-text-stroke: 0.3px #fff;
+    color: black;
+    font-weight: 700;
+}
+.startWindow>button>h1{
+    font-size: 15px;
+}
+/* buttons */
+.chooseColor>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+}
+.chooseColor>div>button{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    transition: all 0.03s ease-in-out 0s ;
+}
+#pink{
+    background-color: pink;
+}
+#blue{
+    background-color: blue;
+}
+#white{
+    background-color: white;
+}
+/* buttons */
+
+.chooseColor>div{
+    position: absolute;
+    top: 30%;
+    right: -3%;
+    width: 73px;
+    border-radius: 1rem;
+    padding: 10px;
+    background: white;
+    transform: translateX(50px);
+    transition: all 1s ease-in-out 0s;
+}
+.chooseColor>.activeChooseColor{
+    transform: translateX(0);
+}
+.chooseColor>div>button:active{
+    transform: scale(1.1);
+}
